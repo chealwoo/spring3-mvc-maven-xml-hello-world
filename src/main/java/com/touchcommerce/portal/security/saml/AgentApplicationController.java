@@ -48,12 +48,13 @@ public class AgentApplicationController {
         model.addObject("htmlTagData", "<br/> creates a new line.");
         model.addObject("url", "http://www.journaldev.com");
 
-        
+        // This redirects to 
+        // http://stackoverflow.com/questions/17955777/redirect-to-an-external-url-from-controller-action-in-spring-mvc
 		return new ModelAndView("redirect:" + "http://www.google.com");
 
 	}
 	
-	@RequestMapping(value = "/SSOEndPoint", method = RequestMethod.GET)
+	@RequestMapping(value = "/SSOEndpoint", method = RequestMethod.GET)
 	public ModelAndView ssoEndPoint(HttpServletRequest request) throws IOException {
 
 		ModelAndView model = new ModelAndView();

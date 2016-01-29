@@ -48,6 +48,18 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/saml/*</url-pattern>
     </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/AgentApplication</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/employee</url-pattern>
+    </servlet-mapping>    
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/SSOEndpoint</url-pattern>
+    </servlet-mapping>    
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
